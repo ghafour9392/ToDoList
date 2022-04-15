@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+  <div class="backdrop"></div>
+  <div class="modalDelete">
+    <p class="titleModal"></p>
+    <div class="btn">
+      <button class="cancelDelete">لغو</button>
+      <button class="delete">حذف</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="project">
+      <header class="header">
+        <p class="title">TODO-LIST</p>
+        <div class="login"></div>
+      </header>
+      <section class="section-todo">
+        <div class="category">
+          <div class="total">
+            TOTAL: 0
+          </div>
+          <div class="success">
+            SUCCESS: 0
+          </div>
+          <div class="pending">
+            PENDING: 0
+          </div>
+        </div>
+        <div class="newtodo">
+          <form>
+            <input type="text" maxlength="15" placeholder="Enter New Title Task" class="input-title">
+            <input type="text" placeholder="Enter Description Task" class="input-description">
+            <button class="save">SAVE</button>
+          </form>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search ...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="listtodo">
+          <p class="NoDate">There is no data</p>
+          <!-- <div class="list" data-id="1">
+            <div class="todo">
+              <p class="title-task">task 1</p>
+              <p class="date-task">01/08</p>
+              <div class="btn-task">
+                <i class="fa-regular fa-square-check"></i>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
+            <div class="description-task">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="clearAll">Clear all
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="sort">
+          <select name="" id="">
+            <option value="default" selected>Default</option>
+            <option value="nameUp">Name - Ascending</option>
+            <option value="nameDown">Name - Descending</option>
+            <option value="dateUp">Date - Ascending</option>
+            <option value="dateDown">Date - Descending</option>
+          </select>
+          <!-- <p class="caption">مرتب سازی (پیش فرض)</p>
+          <div class="option">
+            <p class="nameUp">مرتب سازی (پیش فرض)</p>
+            <p class="nameUp">بر اساس نام - صعودی</p>
+            <p class="nameDown">بر اساس نام - نزولی</p>
+            <p class="dateUp">بر اساس تاریخ - صعودی</p>
+            <p class="dateDown">بر اساس تاریخ - نزولی</p>
+          </div> -->
+          <!-- <input type="text" list="data1">
+          <datalist id="data1">
+            <option value="1">1111111111</option>
+            <option value="1">22222222222</option>
+            <option value="1">333333</option>
+            <option value="1">4444444444</option>
+            <option value="1">555555555</option>
+          </datalist> -->
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="todo.js"></script>
+</body>
+
+</html>
